@@ -1,20 +1,17 @@
-asterisks = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-for x in range(9):
-    if x == 1:
-        print("*")
-    elif x == 2:
-        print("**")
-    elif x == 3:
-        print("***")
-    elif x == 4:
-        print("****")
-    elif x == 5:
-        print("*****")
-    elif x == 6:
-        print("****")
-    elif x == 7:
-        print("***")
-    elif x == 8:
-        print("**")
-    elif x == 9:
-        print("*")
+num = int(input("enter the number of rows:"))
+row_1 = 0
+while row_1 < num:
+    asterisk = row_1 + 1
+    while asterisk > 0:
+        print("*",end="")
+        asterisk = asterisk - 1
+    row_1 = row_1 + 1
+    print()
+
+for row_2 in reversed(range(0,5)):
+    asterisk = row_2
+    while asterisk > 0:
+        print("*",end="")
+        asterisk = asterisk - 1
+    row_2 = row_2 + 1
+    print()
