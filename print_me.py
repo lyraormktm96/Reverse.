@@ -10,3 +10,6 @@ def test_0():
 
 def test_string():
     assert print_me("justice") == 7
+
+def test_string2():
+    assert print_me("inspector") == 9
